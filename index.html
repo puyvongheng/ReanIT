@@ -36,18 +36,18 @@
       
 
       <center>
-        <a href="javascript:void(0)" onclick="loadPage('home.html'); closeCustomAlert();"><div class="aa">home</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('about.html'); closeCustomAlert();"><div class="aa">about</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('services.html'); closeCustomAlert();"><div class="aa">Services</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('contact.html'); closeCustomAlert();"><div class="aa">Contact</div></a>
+        <a href="javascript:void(0)" onclick="loadPage('home.html'); show(); "><div class="aa">home</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('about.html'); closeCustomAlert(); "><div class="aa">about</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('services.html'); closeCustomAlert(); "><div class="aa">Services</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('contact.html'); closeCustomAlert(); "><div class="aa">Contact</div></a>
       </center>
     </div>
 
     <div class="navbar">
       <div class="m">
-        <a class="b" href="javascript:void(0)" onclick="loadPage('home.html'); closeCustomAlert();"><div class="a">Home</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html'); closeCustomAlert();"><div class="a">About</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html'); closeCustomAlert();"><div class="a">Services</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('home.html'); show(); "><div class="a">Home</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html'); closeCustomAlert(); "><div class="a">About</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html'); closeCustomAlert();  "><div class="a">Services</div></a>
         <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html'); closeCustomAlert();"><div class="a">Contact</div></a>
       </div>
 
@@ -56,6 +56,7 @@
       </div>
     </div>
 
+    
  <main>
 
 
@@ -65,30 +66,33 @@
 <div style="background-color: rgb(255, 255, 255);">
   
 
-<center>
-  <nav>
-    <button class="scroll-btn left" onclick="scrollLeft()">&#9664;</button>
-    <div class="nav-container">
-        <ul class="nav-bar">
-            <li><a href="#">html</a></li>
-            <li><a href="#">css</a></li>
-            <li><a href="#">js</a></li>
-            <li><a href="#">python</a></li>
-            <li><a href="#">php</a></li>
-            <li><a href="#">photoshop</a></li>
-            <li><a href="#">canva</a></li>
-            <li><a href="#">network</a></li>
-            <li><a href="#">english</a></li>
-            <li><a href="#">java</a></li>
-        </ul>
-    </div>
-    <button class="scroll-btn right" onclick="scrollRight()">&#9654;</button>
-</nav>
+
+  <div id="subsubbar">
+    <nav class="subsubbars">
+      <button class="scroll-btn left" onclick="scrollLeft()">&#9664;</button>
+      <div class="nav-container">
+          <ul class="nav-bar">
+              <li class="subli"><a href="#">html</a></li>
+              <li class="subli"><a href="#">css</a></li>
+              <li class="subli"><a href="#">js</a></li>
+              <li class="subli"><a href="#">python</a></li>
+              <li class="subli"><a href="#">php</a></li>
+              <li class="subli"><a href="#">photoshop</a></li>
+              <li class="subli"><a href="#">canva</a></li>
+              <li class="subli"><a href="#">network</a></li>
+              <li class="subli"><a href="#">english</a></li>
+              <li class="subli"><a href="#">java</a></li>
+          </ul>
+      </div>
+      <button class="scroll-btn right" onclick="scrollRight()">&#9654;</button>
+  </nav>
+  </div>
+  
 
   <iframe style="border: none; width: 100%; height: 900px;" id="contentFrame" class="content" src="home.html"></iframe>
 
 
-</center>
+
  
  </main>
 
@@ -100,6 +104,21 @@
 </footer>
 
 <script>
+/*
+function hide() {
+    const items = document.querySelectorAll('.nav-bar .subli');
+    items.forEach(item => {
+        item.style.display = 'none';
+    });
+}
+*/
+            function hidesubbar() { 
+              document.querySelector('.subsubbars').style.display = 'none';
+
+           //   document.getElementById('subsubbar').style.display = 'none'; 
+
+            }
+
           function scrollLeft() {
             document.querySelector('.nav-bar').scrollBy({
                 left: -200, // Adjust the value as needed
@@ -128,11 +147,30 @@ function loadPage(page) {
     document.getElementById(' show-alert-button').style.display = 'none';
 }
 function closeCustomAlert() {
+  ahide();
     document.querySelector('.show-alert-button').style.display = 'block';
     document.getElementById('customAlert').style.display = 'none';
     document.querySelector('.alert-overlay ').style.display = 'none';
 }
 
+function ahide() {
+  hidesubbar();
+    document.querySelector('.show-alert-button').style.display = 'block';
+    document.getElementById('customAlert').style.display = 'none';
+    document.querySelector('.alert-overlay ').style.display = 'none';
+}
+function show() { 
+  s();
+            
+              document.querySelector('.show-alert-button').style.display = 'block';
+    document.getElementById('customAlert').style.display = 'none';
+    document.querySelector('.alert-overlay ').style.display = 'none';
+
+
+}
+function s (){
+  document.querySelector('.subsubbars').style.display = 'block';
+}
 </script>
 
 
