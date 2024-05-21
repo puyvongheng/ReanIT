@@ -5,8 +5,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="other/styles.css">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    position: relative;
+
+}
+
+.nav-container {
+    overflow: hidden;
+
+}
+
+.nav-bar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.nav-bar li {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav-bar li a:hover {
+    background-color: #111;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+@media (min-width: 768px) {
+    .scroll-btn {
+        display: none; /* Hide scroll buttons on larger screens */
+    }
+}
+    </style>
 </head>
 <body>
+  <div id="subsubbar">
+    <nav class="subsubbarss">
+  
+      <div class="nav-container">
+          <ul class="nav-bar">
+              <li class="subli"><a href="#">html</a></li>
+              <li class="subli"><a href="#">css</a></li>
+              <li class="subli"><a href="#">js</a></li>
+              <li class="subli"><a href="#">python</a></li>
+              <li class="subli"><a href="#">php</a></li>
+              <li class="subli"><a href="#">photoshop</a></li>
+              <li class="subli"><a href="#">canva</a></li>
+              <li class="subli"><a href="#">network</a></li>
+              <li class="subli"><a href="#">english</a></li>
+              <li class="subli"><a href="#">java</a></li>
+          </ul>
+      </div>
+   
+  </nav>
+  </div>
 
   <center>
 
