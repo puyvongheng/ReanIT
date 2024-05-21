@@ -36,19 +36,19 @@
       
 
       <center>
-        <a href="javascript:void(0)" onclick="loadPage('home.html'); closecomputer();  "><div class="aa">home</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('about.html'); closecomputer();   s();"><div class="aa">about</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('services.html'); closecomputer();   s();"><div class="aa">Services</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('contact.html'); closecomputer();   s();"><div class="aa">Contact</div></a>
+        <a href="javascript:void(0)" onclick="loadPage('home.html'); show(); "><div class="aa">home</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('about.html'); closeCustomAlert(); "><div class="aa">about</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('services.html'); closeCustomAlert(); "><div class="aa">Services</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('contact.html'); closeCustomAlert(); "><div class="aa">Contact</div></a>
       </center>
     </div>
 
     <div class="navbar">
       <div class="m">
-        <a class="b" href="javascript:void(0)" onclick="loadPage('home.html'); closeCustomAlert();  "><div class="a">Home</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html'); closeCustomAlert(); s(); "><div class="a">About</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html'); closeCustomAlert();   s(); "><div class="a">Services</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html'); closeCustomAlert();   s();"><div class="a">Contact</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('home.html'); show(); "><div class="a">Home</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html'); closeCustomAlert(); "><div class="a">About</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html'); closeCustomAlert();  "><div class="a">Services</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html'); closeCustomAlert();"><div class="a">Contact</div></a>
       </div>
 
       <div class="l">
@@ -68,7 +68,7 @@
 
 
   <div id="subsubbar">
-    <nav class="subsubbarss">
+    <nav class="subsubbars">
       <button class="scroll-btn left" onclick="scrollLeft()">&#9664;</button>
       <div class="nav-container">
           <ul class="nav-bar">
@@ -112,7 +112,12 @@ function hide() {
     });
 }
 */
+            function hidesubbar() { 
+              document.querySelector('.subsubbars').style.display = 'none';
 
+           //   document.getElementById('subsubbar').style.display = 'none'; 
+
+            }
 
           function scrollLeft() {
             document.querySelector('.nav-bar').scrollBy({
@@ -141,56 +146,31 @@ function loadPage(page) {
     document.querySelector('.alert-overlay .linkalet').style.display = 'block';
     document.getElementById(' show-alert-button').style.display = 'none';
 }
-
-
-
-
-function show() { //+++++++++++++++++++
-
-
-}
-
-
-
-function closeCustomAlert() {//++++++++++++++++++++++++++++++++++++++++++++
-
-    document.querySelector('.show-alert-button').style.display = 'none';
+function closeCustomAlert() {
+  ahide();
+    document.querySelector('.show-alert-button').style.display = 'block';
     document.getElementById('customAlert').style.display = 'none';
     document.querySelector('.alert-overlay ').style.display = 'none';
-  
-
-}
-function closecomputer() {//++++++++++++++++++++++++++++++++++++++++++++
-
-document.querySelector('.show-alert-button').style.display = 'block';
-  document.getElementById('customAlert').style.display = 'none';
-  document.querySelector('.alert-overlay ').style.display = 'none';
- 
 }
 
-function s(){
-  const items = document.querySelectorAll('.nav-bar .subli');
-    items.forEach(item => {
-        item.style.display = 'none';
-    });
-  document.querySelector('.subsubbarss').style.display = 'none';
-}
-
-function m(){
-  const items = document.querySelectorAll('.nav-bar .subli');
-    items.forEach(item => {
-        item.style.display = 'block';
-    });
-  document.querySelector('.subsubbarss').style.display = 'block';
-}
-
-/*
 function ahide() {
-
   hidesubbar();
-   
+    document.querySelector('.show-alert-button').style.display = 'block';
+    document.getElementById('customAlert').style.display = 'none';
+    document.querySelector('.alert-overlay ').style.display = 'none';
 }
-*/
+function show() { 
+  s();
+            
+              document.querySelector('.show-alert-button').style.display = 'block';
+    document.getElementById('customAlert').style.display = 'none';
+    document.querySelector('.alert-overlay ').style.display = 'none';
+
+
+}
+function s (){
+  document.querySelector('.subsubbars').style.display = 'block';
+}
 </script>
 
 
