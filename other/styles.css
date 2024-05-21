@@ -56,14 +56,18 @@ body {
   @media (max-width: 600px) {
 
 
+
+
     .product {
-      width: 100%;
+      width: 300px;
       margin: 2px;
       padding: 15px;
       border: 1px solid #ddd;
       border-radius: 5px;
       text-align: center;
     }
+
+
 
 
   }
