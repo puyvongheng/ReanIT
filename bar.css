@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
     height: 60px;
-    background-color: #22e684;
+    background-color: #ffc800;
     display: flex;
     flex-direction: flex;
     border-radius: 5px;
@@ -34,7 +34,7 @@
     color: aliceblue;
     text-decoration: none;
     font-size: 20px;
-    background-color: #22e684;
+    background-color: #ffc800;
     padding: 17px;
 }
 a {
@@ -53,45 +53,34 @@ body {
 .xx{
     width: 100%;
         display: flex; justify-content: end;
-        margin-top: 20px;
-       
+        margin-top: 2px;
+        margin-left: 1px;
 }
 #x{
     width: 40px;
     height: 40px;
    border-radius: 50px;
-
-  color: white;
-
- 
   margin-top: -20px;
-
-    
 }
 .custom-alert {
     position: fixed;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #00000076;
-    /* Red background color */
+    background-color: #ffffff;
     color: white;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.555);
- 
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
     width: 70%;
     height: 300px;
     display: none;
-
-
 }
 
 .custom-alert button {
-    background-color: #7be69a;
     color: #ffffff;
     border: none;
-    padding: 10px;
+    padding: 1px;
     margin-top: 10px;
     cursor: pointer;
     border-radius: 5px;
@@ -99,19 +88,10 @@ body {
     height: 50px;
 
 }
-/*
-.custom-alert button:hover {
-    background-color: #10f81f9a;
-    transition: 1.5s;
-}
-
-*/
-
 
 .aa:hover {
-    background-color: #ffffff;
-    transform:  scale(0.9);
-    transition: 1s;
+    background-color: #ffffff48;
+    transition: 0.5s;
 }
 
 .alert-overlay {
@@ -122,16 +102,12 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(6, 6, 6, 0.755);
-    
-
     z-index: 999;
 
 }
 .show-alert-button:hover{
- 
-    transform:  scale(1.1);
-    transition: 1s;
-   
+    transform: scale(1.1) ;
+    transition: 0.5s;
 }
 
 .show-alert-button {
@@ -139,22 +115,15 @@ body {
     width: 60px;
     margin-right: 10px;
     border-radius: 50px;
- 
     border: none;
-   
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     display: none;
-
-
     position: fixed;
-
     right: 0px;
     background: none;
     border: none;
- /*   cursor: pointer;*/
-
     transition: 0.1s;
 }
 
@@ -169,6 +138,7 @@ body {
     width: 150px;
     height: 150px;
     margin-top: -40px;
+    filter: drop-shadow(1px 4px 2px );
 }
 
 
@@ -202,7 +172,7 @@ footer {
         width: 100%;
         width: 100%;
         height: 60px;
-        background-color: #22e684;
+
         display: flex;
         flex-direction: flex;
         border-radius: 5px;
@@ -237,7 +207,6 @@ footer {
 }
 
 .aa {
-    background-color: #e67e22;
     color: #000000;
     border: none;
     margin-top: 10px;
@@ -246,8 +215,7 @@ footer {
     width: 100%;
     height: 50px;
     font-size: 1.2rem;
-    
-   
-
-
+}
+.aa:hover{
+    color: green;
 }
