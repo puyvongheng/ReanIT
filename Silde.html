@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 500px;
+      padding: 1rem;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+         
+     
+        }
+
+        .slide {
+            flex: 0 0 100%; /* Each slide takes full width */
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="carousel">
+        <div class="slide">
+            <img src="https://as2.ftcdn.net/v2/jpg/03/88/94/19/1000_F_388941905_0NjTRUeFAnFEojcn7z7RBZhNA0rVImx8.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://as2.ftcdn.net/v2/jpg/05/42/20/89/1000_F_542208990_K2tImbCxxHXlxEptnSLWmwkkmZm6Aehn.jpg" alt="">
+        </div>
+        <div class="slide">
+            <img src="https://i0.wp.com/rollercoasteryears.com/wp-content/uploads/Thrive-During-Finals-.jpg?fit=1000%2C667&ssl=1" alt="">
+        </div>
+        <!-- Add more slides as needed -->
+    </div>
+    <div class="controls">
+        <button onclick="prevSlide()">Previous Slide</button>
+        <span id="slideNumber"></span>
+        <button onclick="nextSlide()">Next Slide</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+        const slideNumberElement = document.getElementById('slideNumber');
+
+        function showSlide(slideIndex) {
+            slides.forEach((slide, index) => {
+                slide.style.transform = `translateX(-${100 * slideIndex}%)`;
+            });
+            slideNumberElement.textContent = `Slide ${slideIndex + 1} of ${slides.length}`;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide); // Initial display
+
+        setInterval(nextSlide, 3000); // Change slide every 3 seconds
+    </script>
+</body>
+</html>
