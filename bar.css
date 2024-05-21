@@ -144,7 +144,8 @@ body {
 
 main{
     color: #000000;
-    padding: 1rem;
+    padding: 0rem;
+
 
 }
 
@@ -163,6 +164,11 @@ footer {
 
 }
 @media (max-width: 600px) {
+    .main{
+        height: 70px;
+
+    
+    }
 
     .logo{
         display: block;
