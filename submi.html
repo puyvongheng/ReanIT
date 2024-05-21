@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="subbar.css">
+    <style>
+     
+    </style>
+</head>
+<body>
+    <nav>
+        <button class="scroll-btn left" onclick="scrollLeft()">&#9664;</button>
+        <div class="nav-container">
+            <ul class="nav-bar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </div>
+        <button class="scroll-btn right" onclick="scrollRight()">&#9654;</button>
+    </nav>
+
+    <script>
+        function scrollLeft() {
+            document.querySelector('.nav-bar').scrollBy({
+                left: -200, // Adjust the value as needed
+                behavior: 'smooth'
+            });
+        }
+
+        function scrollRight() {
+            document.querySelector('.nav-bar').scrollBy({
+                left: 200, // Adjust the value as needed
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
