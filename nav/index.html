@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puyvong Heng</title>
+    <link rel="icon" href="HENGLOGO.ai.png">
+    <link rel="stylesheet" href="bar.css">
+    <link rel="stylesheet" href="other/styles.css">
+   
+  </head>
+  <body>
+
+    <div class="phonebar"  >
+      <img class="logo" src="logo/រៀនIT.png" alt="">
+      <button  class="show-alert-button" onclick="showCustomAlert()  ">
+      <img class="menu_img"src="https://img.icons8.com/ios-glyphs/480/menu--v3.png"alt="menu--v3" />
+      </button>
+    </div>
+
+
+    <p id="p" class="p"></p>
+    <div class="custom-alert" id="customAlert">
+      <div class="xx">
+        <button id="x" onclick=" closeCustomAlert()">
+          <img width="16" height="16" src="https://img.icons8.com/ios/100/delete-sign--v1.png" alt="delete-sign--v1"/>
+
+ 
+
+        </button>
+      </div>
+      
+
+      <center>
+        <a href="javascript:void(0)" onclick="loadPage('home.html')"><div class="aa">home</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('about.html')"><div class="aa">about</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('services.html')"><div class="aa">Services</div></a>
+        <a href="javascript:void(0)"onclick="loadPage('contact.html')"><div style="background-color: gold"class="aa">Contact</div></a>
+      </center>
+    </div>
+
+    <div class="navbar">
+ 
+
+      <div class="m">
+        <a class="b" href="javascript:void(0)" onclick="loadPage('home.html')"><div class="a">Home</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html')"><div class="a">About</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html')"><div class="a">Services</div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html')"><div class="a">Contact</div></a>
+      </div>
+
+      <div class="l">
+        <img class="logo"  style="display: block; margin-top: 0px; " src="logo/រៀនIT.png" alt="">
+      </div>
+
+    </div>
+
+    <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxbarxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+ <main>
+  <div style="height: 70px; ">
+    </div>
+      <div style="background-color: rgb(255, 255, 255);">
+       <center>
+
+
+    <div class="products-container">
+      <div class="product">
+    
+        <iframe src="https://www.youtube.com/embed/X7eo4OYR8BU?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០១ - អំពី​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
+         <h3>០១ - អំពី​កូដ HTML | KHODE</h3>
+        <p> </p>
+        <span>
+            Khode Academy</span>
+        <button>dowloand</button>
+      </div>
+      
+      <div class="product">
+        <iframe src="https://www.youtube.com/embed/rymmV7E90Vo?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០២ - HTML គឺ​ងាយ​ស្រួល | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+        <h3>០២ - HTML គឺ​ងាយ​ស្រួល | KHODE</h3>
+        <p></p>
+        <span>Khode Academy</span>
+        <button>dowloand</button>
+      </div>
+    
+      <div class="product">
+        
+        <iframe src="https://www.youtube.com/embed/LpyEKPOC0aY?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+        <h3>០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE</h3>
+        <p></p>
+        <span>Khode Academy</span>
+        <button>dowloand</button>
+      </div>
+      
+    
+      <div class="product">
+        <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
+        <p></p>
+        <span>Khode Academy</span>
+        <button>dowloand</button>
+      </div>
+      
+      
+     
+    
+    </div>
+        </center>
+ </main>
+
+
+<!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxfxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+ <footer>
+  <p>&copy; 2024 My Website</p>
+</footer>
+
+<script>
+
+function loadPage(page) {
+            document.getElementById('contentFrame').src = page;
+        }
+
+
+  function showCustomAlert() {
+   // setTimeout(closeCustomAlert, 5000);
+    document.querySelector('.show-alert-button').style.display = 'none';
+    document.getElementById('customAlert').style.display = 'block';
+    document.querySelector('.alert-overlay .linkalet').style.display = 'block';
+    document.getElementById(' show-alert-button').style.display = 'none';
+}
+function closeCustomAlert() {
+    document.querySelector('.show-alert-button').style.display = 'block';
+    document.getElementById('customAlert').style.display = 'none';
+    document.querySelector('.alert-overlay ').style.display = 'none';
+}
+
+</script>
+
+
+  </body>
+</html>
