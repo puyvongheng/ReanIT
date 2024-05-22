@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h1 {
+    color: #333;
+}
+h2 {
+    color: #333;
+    margin-top: 30px;
+}
+p {
+    line-height: 1.6;
+}
+.service {
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}

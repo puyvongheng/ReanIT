@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: none;
+}
+
+
+
+.nav-container {
+    overflow: hidden;
+  
+
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.nav-bar li {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+
+}
+
+.nav-bar li a {
+    display: block;
+    display: flex;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+   
+}
+
+.nav-bar li a:hover {
+    background-color: rgba(67, 145, 241, 0.332);
+    color: red;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(67, 146, 241, 1);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+.nav-bar{
+  display: none;
+}
+#clos{
+ border: 0;
+width: 100%;
+  padding: 1rem;
+  display: none;
+  background-color:transparent;
+}
+#show{
+  width: 100%;
+border: 0;
+  padding: 1rem;
+  background-color:transparent;
+}
+#clos :hover{
+transform: 1rem;
+
+}
+#show:hover{
+  transform: 1rem;
+
+}
+
+@media (min-width: 768px) {
+
+  #clos{
+
+display: none;
+  }
+  .nav-bar {
+    flex-direction: row;
+    
+
+  }
+
+    .scroll-btn {
+        display: none; /* Hide scroll buttons on larger screens */
+    }
+}

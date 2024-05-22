@@ -47,11 +47,22 @@
     <div class="navbar">
       <div class="m">
         <!--computet-->
-        <a class="b" id="home1" href="javascript:void(0)" onclick="loadPage('home.html'); h1();  "><div class="a"  ><p class="home" >Home</p></div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('tool.html');  h2();"><div class="a"><p class="tool">Tool</p></div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html');  h3(); "><div class="a"><p class="about">About</p></div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html');  h4(); "><div class="a"><p class="Services">Services</p></div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html');  h5();"><div class="a"><p class="Contact">Contact</p></div></a>
+        <a class="b" id="home1" href="javascript:void(0)" onclick="loadPage('home.html'); h1();  ">
+          <div class="a home1"  >
+            <img class="iconbar" src="https://img.icons8.com/ios/100/home--v1.png" alt="home--v1"/>
+            <p class="home" >Home</p>
+          </div>
+        </a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('tool.html');  h2();">
+          <div class="a tool1">
+            <img class="iconbar" src="https://img.icons8.com/ios/100/web.png" alt="web"/>
+
+            <p class="tool">Tool</p>
+          </div>
+        </a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html');  h3(); "><div class="a about1"><p class="about">About</p></div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html');  h4(); "><div class="a Services1"><p class="Services">Services</p></div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html');  h5();"><div class="a Contact1"><p class="Contact">Contact</p></div></a>
       </div>
 
       <div class="l">
@@ -92,12 +103,25 @@
 function h1() {
         
 
-          document.querySelector('.navbar .home').style.color ='red';
-          document.querySelector('.navbar .tool').style.color ='aliceblue';
-          document.querySelector('.navbar .about').style.color ='aliceblue';
-          document.querySelector('.navbar .Services').style.color ='aliceblue';
-          document.querySelector('.navbar .Contact').style.color ='aliceblue';
+          document.querySelector('.navbar .home ').style.color ='red';
+          document.querySelector('.navbar .tool ').style.color ='aliceblue';
+          document.querySelector('.navbar .about ').style.color ='aliceblue';
+          document.querySelector('.navbar .Services ').style.color ='aliceblue';
+          document.querySelector('.navbar .Contact ').style.color ='aliceblue';
 
+          document.querySelector('.home1').style.backgroundColor = '#D0D3D4';
+          document.querySelector('.tool1').style.backgroundColor = '';
+        document.querySelector('.about1').style.backgroundColor = '';
+        document.querySelector('.Services1').style.backgroundColor = '';
+        document.querySelector('.Contact1').style.backgroundColor = '';
+
+          /*
+          document.querySelector('.home1').style.backgroundColor = '#ededed69';
+          document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+          document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+          document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+          document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+*/
       }
 
       
@@ -105,11 +129,24 @@ function h2() {
         
 
         document.querySelector('.navbar .home').style.color ='aliceblue';
-        document.querySelector('.navbar .tool').style.color ='red';
+        document.querySelector('.navbar .tool ').style.color ='red';
         document.querySelector('.navbar .about').style.color ='';
         document.querySelector('.navbar .Services').style.color ='';
         document.querySelector('.navbar .Contact').style.color ='';
 
+        document.querySelector('.home1').style.backgroundColor = ' #4392f1';
+          document.querySelector('.tool1').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.about1').style.backgroundColor = '';
+        document.querySelector('.Services1').style.backgroundColor = '';
+        document.querySelector('.Contact1').style.backgroundColor = '';
+
+/*
+        document.querySelector('.home').style.backgroundColor = 'none';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+*/
     }
     
 function h3() {
@@ -121,6 +158,19 @@ function h3() {
         document.querySelector('.navbar .Services').style.color ='';
         document.querySelector('.navbar .Contact').style.color ='';
 
+        document.querySelector('.home1').style.backgroundColor = ' #4392f1';
+          document.querySelector('.tool1').style.backgroundColor = '';
+        document.querySelector('.about1').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.Services1').style.backgroundColor = '';
+        document.querySelector('.Contact1').style.backgroundColor = '';
+
+/*
+        document.querySelector('.home').style.backgroundColor = 'none';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+*/
     }
     
 function h4() {
@@ -132,6 +182,19 @@ function h4() {
         document.querySelector('.navbar .Services').style.color ='red';
         document.querySelector('.navbar .Contact').style.color ='';
 
+        document.querySelector('.home1').style.backgroundColor = ' #4392f1';
+          document.querySelector('.tool1').style.backgroundColor = '';
+        document.querySelector('.about1').style.backgroundColor = '';
+        document.querySelector('.Services1').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.Contact1').style.backgroundColor = '';
+
+/*
+        document.querySelector('.home').style.backgroundColor = 'none';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+*/
     }
     
 function h5() {
@@ -143,6 +206,19 @@ function h5() {
         document.querySelector('.navbar .Services').style.color ='';
         document.querySelector('.navbar .Contact').style.color ='red';
 
+        document.querySelector('.home1').style.backgroundColor = ' #4392f1';
+          document.querySelector('.tool1').style.backgroundColor = '';
+        document.querySelector('.about1').style.backgroundColor = '';
+        document.querySelector('.Services1').style.backgroundColor = '';
+        document.querySelector('.Contact1').style.backgroundColor = '#D0D3D4';
+
+/*
+        document.querySelector('.home').style.backgroundColor = 'none';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
+*/
     }
 
 

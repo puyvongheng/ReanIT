@@ -1,28 +1,101 @@
+/*computer*/
 .navbar {
     width: 100%;
     height: 60px;
-  
-  background:  rgba(67, 146, 241, 1);
+    background:  #4392f1;
     display: flex;
     flex-direction: flex;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+}
+.m{
+display: flex;
 
 }
-    .m{
-    display: flex;
+.b{
+    
+    height: 60px;
+    border: fuchsia;
+  
 }
+.iconbar{
+   height: 30px;
+   padding: 5px;
+   margin: 5px;
+   margin-top: 10px;
+ /*  background-color: blue;*/
+
+}
+
+.a {
+  display: flex;
+  flex-direction: row;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+  
+ 
+}
+
+.home {
+    font-size: 20px;
+}
+.home1{
+    background-color: #D0D3D4;
+  
+    height: 60px;
+  
+}
+.tool {
+    font-size: 20px;
+}
+.tool1 {
+    font-size: 20px;
+    height: 60px;
+   
+    background-color:  rgba(67, 146, 241, 1);
+
+  
+}
+.about {
+    font-size: 15px;
+}
+.about1 {
+    font-size: 20px;
+}
+.Services {
+    font-size: 15px;
+}
+.Services1 {
+    font-size: 20px;
+}
+.Contact {
+    font-size: 15px;
+}
+.Contact1 {
+    font-size: 20px;
+}
+
+.a:hover {
+    color: red;
+    transition: 0.5s;
+}
+
+
+
+
+/*------------------------------------*/
+
+
+
+
+
+
     .l{
     display: flex;
 }
-.b{
-    height: 60px;
-    width: 150px;
-    margin: 1px;
-}
+
 .home {
     padding: 17px;
     margin-top: 0px;
@@ -45,24 +118,11 @@
 }
 
 
-.a:hover {
-  
-    color: red;
-    transition: 0.5s;
-}
-.a {
 
-    color: aliceblue;
-    text-decoration: none;
-    font-size: 20px;
-  
 
-   
-}
+
 a {
     text-decoration: none;
- 
-
 }
 
 body {
@@ -86,6 +146,20 @@ body {
    border-radius: 50px;
   margin-top: -20px;
 }
+.aa {
+    color: #000000;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+}
+.aa:hover{
+    color: rgba(67, 146, 241, 1);
+    transform: 0.5s;
+}
 .custom-alert {
     position: fixed;
     top: 50%;
@@ -100,7 +174,6 @@ body {
     height: 300px;
     display: none;
 }
-
 .custom-alert button {
     color: #ffffff;
     border: none;
@@ -110,11 +183,7 @@ body {
     border-radius: 5px;
     width: 100%;
     height: 50px;
-
 }
-
-
-
 .alert-overlay {
     display: none;
     position: fixed;
@@ -124,13 +193,11 @@ body {
     height: 100%;
     background-color: rgba(6, 6, 6, 0.755);
     z-index: 999;
-
 }
 .show-alert-button:hover{
     transform: scale(1.1) ;
     transition: 0.5s;
 }
-
 .show-alert-button {
     height: 60px;
     width: 60px;
@@ -147,13 +214,11 @@ body {
     border: none;
     transition: 0.1s;
 }
-
+/**---------------------------------------*/
 .menu_img {
     width: 25px;
     height: 20px;
 }
-/**---------------------------------------*/
-
 .logo{
     display: none;
     width: 150px;
@@ -161,93 +226,42 @@ body {
     margin-top: -40px;
     filter: drop-shadow(1px 4px 2px );
 }
-
-
-main{
-    color: #000000;
-    padding: 0rem;
-
-
-}
-
-
 footer {
-    
     display: flex;
-
-    display: none;
-
     color: #000000;
     text-align: center;
-  
     position: fixed;
     bottom: 0;
     width: 100%;
+    display: none;
 
 }
 @media (max-width: 600px) {
     .main{
         height: 70px;
-
-    
     }
-
     .logo{
         display: block;
-     
     }
-
-    
     .phonebar{
         width: 100%;
         width: 100%;
         height: 60px;
-
         display: flex;
         flex-direction: flex;
         border-radius: 5px;
         position: fixed;
         background-color: rgba(67, 146, 241, 1);
- 
     }
     .show-alert-button {
         display: block;
     }
-
     .a {
-        width: 80px;
-        height: 29px;
-        border-radius: 0px;
-        color: aliceblue;
-        text-decoration: none;
-        background-color: rgba(67, 146, 241, 1);;
         display: none;
     }
     .navbar {
-      
-        width: 100%;
-        height: 50px;
-        background-color:  rgba(67, 146, 241, 1);
-        display: flex;
-        flex-direction: column;
         display: none;
-
-
     }
 
 }
 
-.aa {
-    color: #000000;
-    border: none;
-    margin-top: 10px;
-    cursor: pointer;
-    border-radius: 10px;
-    width: 100%;
-    height: 50px;
-    font-size: 1.2rem;
-}
-.aa:hover{
-    color: rgba(67, 146, 241, 1);;
-    transform: 0.5s;
-}
