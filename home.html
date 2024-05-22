@@ -10,15 +10,14 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
     scroll-behavior: smooth;
-
-
 }
 
 nav {
-    background-color: #333;
-    position: relative;
+    background-color: #818181;
+
+ 
+   
 
 }
 
@@ -29,6 +28,8 @@ nav {
 
 .nav-bar {
     display: flex;
+    flex-direction: column;
+  
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -38,26 +39,31 @@ nav {
 
 .nav-bar li {
     flex: 0 0 auto; /* Prevent flex items from shrinking */
+
 }
 
 .nav-bar li a {
     display: block;
-    color: white;
+    display: flex;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    white-space: nowrap; /* Prevent text from wrapping */
+   
 }
 
 .nav-bar li a:hover {
-    background-color: #111;
+    background-color: #1111116f;
+    margin: 2px;
+    border-radius: 5px;
+    transition: 0.5s;
 }
 
 .scroll-btn {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     border: none;
     color: white;
     padding: 10px;
@@ -71,8 +77,38 @@ nav {
 .scroll-btn.right {
     right: 0;
 }
+.nav-bar{
+  display: none;
+}
+#clos{
+ border: 0;
+width: 100%;
+  padding: 1rem;
+  display: none;
+  background-color: #91919181;
+
+  
+}
+#show{
+  width: 100%;
+border: 0;
+  padding: 1rem;
+  background-color: #91919181;
+
+  
+}
 
 @media (min-width: 768px) {
+  #clos{
+
+display: none;
+  }
+  .nav-bar {
+    flex-direction: row;
+    
+
+  }
+
     .scroll-btn {
         display: none; /* Hide scroll buttons on larger screens */
     }
@@ -84,7 +120,10 @@ nav {
     <nav class="subsubbarss">
   
       <div class="nav-container">
+        <button id="clos" onclick="clos();">clode</button>
+        <button id="show" onclick="show();">more</button>
           <ul class="nav-bar">
+         
               <li class="subli" ><a id="html" href="javascript:void(0)" onclick="loadPage('cose/html.html '); html(); ">html</a></li>
               <li class="subli"><a id="css" href="javascript:void(0)" onclick="loadPage('cose/css.html '); css(); ">css</a></li>
               <li class="subli"><a id="js" href="javascript:void(0)" onclick="loadPage('cose/js.html' ); js();">js</a></li>
@@ -104,7 +143,23 @@ nav {
 
  
     <script>
+      function show() {
+        document.querySelector('.nav-bar').style.display='block';
+        document.getElementById('clos').style.display='block';
+        document.getElementById('show').style.display='none';
+   
+        
+             
+      }
+      function clos() {
+        document.querySelector('.nav-bar').style.display='none';
+        document.getElementById('show').style.display='block';
+        document.getElementById('clos').style.display='none';
+  
+             
+      }
        function html(){
+        clos();
         document.getElementById('html').style.color ='red';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='';
@@ -117,6 +172,7 @@ nav {
           document.getElementById('java').style.color ='';
       }
       function css(){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='red';
           document.getElementById('js').style.color ='';
@@ -129,6 +185,7 @@ nav {
           document.getElementById('java').style.color ='';
       }
       function js(){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='red';
@@ -141,6 +198,7 @@ nav {
           document.getElementById('java').style.color ='';
       }
       function python(){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='';
@@ -154,6 +212,7 @@ nav {
       }
       function php
       (){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='';
@@ -167,6 +226,7 @@ nav {
       }
 
       function photoshop(){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='';
@@ -180,6 +240,7 @@ nav {
       }
 
       function canva(){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='';
@@ -193,6 +254,7 @@ nav {
       }
 
       function network(){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='';
@@ -206,6 +268,7 @@ nav {
       }
 
       function english(){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='';
@@ -219,6 +282,7 @@ nav {
       }
 
       function java(){
+        clos();
         document.getElementById('html').style.color ='';
           document.getElementById('css').style.color ='';
           document.getElementById('js').style.color ='';

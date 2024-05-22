@@ -35,9 +35,9 @@
       </div>
       
 
-      <center>
-        <a href="javascript:void(0)" onclick="loadPage('home.html'); closecomputer();  "><div class="aa">home</div></a>
-        <a href="javascript:void(0)" onclick="loadPage('tool.html'); closecomputer();  "><div class="aa">tool</div></a>
+      <center><!--phome-->
+        <a  href="javascript:void(0)" onclick="loadPage('home.html'); closecomputer();"><div class="aa" >home</div></a>
+        <a href="javascript:void(0)" onclick="loadPage('tool.html'); closecomputer();  s();"><div class="aa">tools</div></a>
         <a href="javascript:void(0)"onclick="loadPage('about.html'); closecomputer();   s();"><div class="aa">about</div></a>
         <a href="javascript:void(0)"onclick="loadPage('services.html'); closecomputer();   s();"><div class="aa">Services</div></a>
         <a href="javascript:void(0)"onclick="loadPage('contact.html'); closecomputer();   s();"><div class="aa">Contact</div></a>
@@ -46,11 +46,12 @@
 
     <div class="navbar">
       <div class="m">
-        <a class="b" href="javascript:void(0)" onclick="loadPage('home.html'); closeCustomAlert();  "><div class="a">Home</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('tool.html'); closeCustomAlert();  "><div class="a">tool</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html'); closeCustomAlert(); s(); "><div class="a">About</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html'); closeCustomAlert();   s(); "><div class="a">Services</div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html'); closeCustomAlert();   s();"><div class="a">Contact</div></a>
+        <!--computet-->
+        <a class="b" id="home1" href="javascript:void(0)" onclick="loadPage('home.html'); h1();  "><div class="a"  ><p class="home" >home</p></div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('tool.html');  h2();"><div class="a"><p class="tool">tool</p></div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html');  h3(); "><div class="a"><p class="about">About</p></div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html');  h4(); "><div class="a"><p class="Services">Services</p></div></a>
+        <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html');  h5();"><div class="a"><p class="Contact">Contact</p></div></a>
       </div>
 
       <div class="l">
@@ -87,14 +88,62 @@
 </footer>
 
 <script>
-/*
-function hide() {
-    const items = document.querySelectorAll('.nav-bar .subli');
-    items.forEach(item => {
-        item.style.display = 'none';
-    });
-}
-*/
+
+function h1() {
+        
+
+          document.querySelector('.navbar .home').style.color ='red';
+          document.querySelector('.navbar .tool').style.color ='aliceblue';
+          document.querySelector('.navbar .about').style.color ='aliceblue';
+          document.querySelector('.navbar .Services').style.color ='aliceblue';
+          document.querySelector('.navbar .Contact').style.color ='aliceblue';
+
+      }
+
+      
+function h2() {
+        
+
+        document.querySelector('.navbar .home').style.color ='aliceblue';
+        document.querySelector('.navbar .tool').style.color ='red';
+        document.querySelector('.navbar .about').style.color ='';
+        document.querySelector('.navbar .Services').style.color ='';
+        document.querySelector('.navbar .Contact').style.color ='';
+
+    }
+    
+function h3() {
+        
+
+        document.querySelector('.navbar .home').style.color ='aliceblue';
+        document.querySelector('.navbar .tool').style.color ='';
+        document.querySelector('.navbar .about').style.color ='red';
+        document.querySelector('.navbar .Services').style.color ='';
+        document.querySelector('.navbar .Contact').style.color ='';
+
+    }
+    
+function h4() {
+        
+
+        document.querySelector('.navbar .home').style.color ='aliceblue';
+        document.querySelector('.navbar .tool').style.color ='';
+        document.querySelector('.navbar .about').style.color ='';
+        document.querySelector('.navbar .Services').style.color ='red';
+        document.querySelector('.navbar .Contact').style.color ='';
+
+    }
+    
+function h5() {
+        
+
+        document.querySelector('.navbar .home').style.color ='aliceblue';
+        document.querySelector('.navbar .tool').style.color ='';
+        document.querySelector('.navbar .about').style.color ='';
+        document.querySelector('.navbar .Services').style.color ='';
+        document.querySelector('.navbar .Contact').style.color ='red';
+
+    }
 
 
           function scrollLeft() {
@@ -114,6 +163,8 @@ function hide() {
 
 function loadPage(page) {
             document.getElementById('contentFrame').src = page;
+
+         
         }
 
 
