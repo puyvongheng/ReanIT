@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="other/styles.css">
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+
+
+}
+
+nav {
+    background-color: #333;
+    position: relative;
+
+}
+
+.nav-container {
+    overflow: hidden;
+
+}
+
+.nav-bar {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.nav-bar li {
+    flex: 0 0 auto; /* Prevent flex items from shrinking */
+}
+
+.nav-bar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.nav-bar li a:hover {
+    background-color: #111;
+}
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+@media (min-width: 768px) {
+    .scroll-btn {
+        display: none; /* Hide scroll buttons on larger screens */
+    }
+}
+    </style>
+</head>
+<body>
+  <div id="subsubbar">
+    <nav class="subsubbarss">
+  
+      <div class="nav-container">
+          <ul class="nav-bar">
+              <li class="subli" ><a id="html" href="javascript:void(0)" onclick="loadPage('cose/html.html '); html(); ">html</a></li>
+              <li class="subli"><a id="css" href="javascript:void(0)" onclick="loadPage('cose/css.html '); css(); ">css</a></li>
+     <!--        <li class="subli"><a id="js" href="javascript:void(0)" onclick="loadPage('cose/js.html' ); js();">js</a></li>
+              <li class="subli"><a id="python" href="javascript:void(0)" onclick="loadPage('cose/python.html'); python();">python</a></li>
+              <li class="subli"><a id="php" href="javascript:void(0)" onclick="loadPage('cose/php.html'); php();">php</a></li>
+              <li class="subli"><a id="photoshop" href="javascript:void(0)" onclick="loadPage('cose/photoshop.html'); photoshop();">photoshop</a></li>
+              <li class="subli"><a id="canva" href="javascript:void(0)" onclick="loadPage('cose/canva.html');canva();">canva</a></li>
+              <li class="subli"><a id="network" href="javascript:void(0)" onclick="loadPage('cose/network.html');network();">network</a></li>
+              <li class="subli"><a id="english" href="javascript:void(0)" onclick="loadPage('cose/english.html');english();">english</a></li>
+              <li class="subli"><a id="java" href="javascript:void(0)" onclick="loadPage('cose/java.html');java();">java</a></li>
+          --> 
+            </ul>
+      </div>
+   
+  </nav>
+  </div>
+  <iframe style="border: none; width: 100%; height: 900px;" id="contentFrame" class="content" src="#"></iframe>
+
+ 
+    <script>
+       function html(){
+        document.getElementById('html').style.color ='red';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='';
+      }
+      function css(){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='red';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='';
+      }
+      function js(){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='red';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='';
+      }
+      function python(){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='red';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='';
+      }
+      function php
+      (){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='red';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='';
+      }
+
+      function photoshop(){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='red';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='';
+      }
+
+      function canva(){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='red';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='';
+      }
+
+      function network(){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='red';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='';
+      }
+
+      function english(){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='red';
+          document.getElementById('java').style.color ='';
+      }
+
+      function java(){
+        document.getElementById('html').style.color ='';
+          document.getElementById('css').style.color ='';
+          document.getElementById('js').style.color ='';
+          document.getElementById('python').style.color ='';
+          document.getElementById('php').style.color ='';
+          document.getElementById('photoshop').style.color ='';
+          document.getElementById('canva').style.color ='';
+          document.getElementById('network').style.color ='';
+          document.getElementById('english').style.color ='';
+          document.getElementById('java').style.color ='red';
+      }
+
+
+
+
+
+
+
+
+
+function loadPage(page) {
+            document.getElementById('contentFrame').src = page;
+         
+        }
+
+
+ 
+
+
+    </script>
+    
+ 
+  <!-- 
+    <iframe src="other/products.html" style="border: none;" width="100%px" height="900px" frameborder="0"></iframe>
+
+ <iframe height="528"  src="https://www.youtube.com/embed/SiUwcDUYcuc" title="ចំប៉ីសៀមរាប - សុីន សុីសាមុត | Sin Sisamuth | ចម្រៀងមាស | Old Song" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   -->
+</body>
+</html>
