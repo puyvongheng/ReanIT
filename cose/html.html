@@ -14,35 +14,46 @@
     display: flex;
    flex-wrap: wrap;
     margin: 20px auto;
+    display: flex;
+    justify-content: center;
+
     
 
 
   }
 
+
   .product {
     width: 300px;
-    margin: 20px;
+    margin: 15px;
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-
-
-
   }
-
-
-
-
-
-
-  .product img {
+  
+  .product iframe {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
   }
+  .product button {
+    background-color: #1767c2;
+    color: #fff;
+    border: none;
+    padding: 08px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+
+
+
+
   
   .product h3 {
+    font-size: 0.8rem;
     margin-top: 10px;
     text-align: start;
   }
@@ -57,18 +68,10 @@
     font-weight: bold;
     margin-top: 10px;
     text-align: start;
+    font-size: 0.8rem;
   }
   
-  .product button {
-    background-color: #728294;
-    color: #fff;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
+
   .product button:hover {
     background-color: #2f94ff;
   }
@@ -92,19 +95,37 @@
 
 
 
+
   }
+  
+ 
+
+
+
+  .reveal {
+
+            box-shadow: 0 1px 20px rgba(0, 0, 0, 0.174);
+            transform: 1s ;
+            transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+        
+
+        }
+        .reveal:hover{
+          transform: scale(1.05);
+          box-shadow: none;
+          border: none;
+       
+         
+        }
+
   
    </style>
 </head>
 <body>
-    <center>
-    
-
-
-
 
         <div class="products-container">
-          <div class="product">
+
+          <div class="reveal product" >
         
             <iframe src="https://www.youtube.com/embed/X7eo4OYR8BU?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០១ - អំពី​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>   
              <h3>០១ - អំពី​កូដ HTML | KHODE</h3>
@@ -114,7 +135,7 @@
             <button>dowloand</button>
           </div>
           
-          <div class="product">
+          <div class="reveal product" >
             <iframe src="https://www.youtube.com/embed/rymmV7E90Vo?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០២ - HTML គឺ​ងាយ​ស្រួល | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         
             <h3>០២ - HTML គឺ​ងាយ​ស្រួល | KHODE</h3>
@@ -123,7 +144,7 @@
             <button>dowloand</button>
           </div>
         
-          <div class="product">
+          <div class="reveal product" >
             
             <iframe src="https://www.youtube.com/embed/LpyEKPOC0aY?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           
@@ -132,187 +153,82 @@
             <span>Khode Academy</span>
             <button>dowloand</button>
           </div>
+
+          <div class="reveal product" >
+            
+            <iframe src="https://www.youtube.com/embed/LpyEKPOC0aY?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           
-        
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
+            <h3>០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE</h3>
             <p></p>
             <span>Khode Academy</span>
             <button>dowloand</button>
           </div>
+          <div class="reveal product" >
+            
+            <iframe src="https://www.youtube.com/embed/LpyEKPOC0aY?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           
-          <!--tessssssssssssss-->
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
+            <h3>០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE</h3>
             <p></p>
             <span>Khode Academy</span>
             <button>dowloand</button>
           </div>
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
+          <div class="reveal product" >
+            
+            <iframe src="https://www.youtube.com/embed/LpyEKPOC0aY?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+            <h3>០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE</h3>
             <p></p>
             <span>Khode Academy</span>
             <button>dowloand</button>
           </div>
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
+          <div class="reveal product" >
+            
+            <iframe src="https://www.youtube.com/embed/LpyEKPOC0aY?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+            <h3>០៣ - កម្មវិធី​សម្រាប់​​សរសេរ​កូដ HTML | KHODE</h3>
             <p></p>
             <span>Khode Academy</span>
             <button>dowloand</button>
           </div>
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-            <p></p>
-            <span>Khode Academy</span>
-            <button>dowloand</button>
-          </div>
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-            <p></p>
-            <span>Khode Academy</span>
-            <button>dowloand</button>
-          </div>
-          <!--tesssssssssssssssss-->
-               <!--tessssssssssssss-->
-              
-               <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-                  
-              <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-                  
-              <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-                  
-              <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-                  
-              <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-              <!--tesssssssssssssssss-->
-                    <!--tessssssssssssss-->
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-            <p></p>
-            <span>Khode Academy</span>
-            <button>dowloand</button>
-          </div>
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-            <p></p>
-            <span>Khode Academy</span>
-            <button>dowloand</button>
-          </div>
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-            <p></p>
-            <span>Khode Academy</span>
-            <button>dowloand</button>
-          </div>
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-            <p></p>
-            <span>Khode Academy</span>
-            <button>dowloand</button>
-          </div>
-              
-          <div class="product">
-            <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-            <p></p>
-            <span>Khode Academy</span>
-            <button>dowloand</button>
-          </div>
-          <!--tesssssssssssssssss-->
-               <!--tessssssssssssss-->
-              
-               <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-                  
-              <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-                  
-              <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-                  
-              <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>dowloand</button>
-              </div>
-                  
-              <div class="product">
-                <iframe  src="https://www.youtube.com/embed/UaFDW5aQyu4?list=PLuEdNLfGOtnWYYrz0AGh50HEgwKlfUSMF" title="០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>០៤ - មូលដ្ឋាន​គ្រឹះ​នៃ​កូដ HTML | KHODE</h3>
-                <p></p>
-                <span>Khode Academy</span>
-                <button>end</button>
-              </div>
-              <!--tesssssssssssssssss-->
-         
-        
+
+
+
+
+
         </div>
-        </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+                  document.addEventListener('DOMContentLoaded', function () {
+            const sr = ScrollReveal({
+                origin: 'bottom',
+
+                delay: 200,
+                easing: 'ease-out',
+                reset: false
+            });
+
+            sr.reveal('.reveal', {
+                interval: 200
+            });
+        });
+        </script>
 </body>
 </html>
