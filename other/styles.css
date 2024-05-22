@@ -19,11 +19,16 @@ body {
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
-  
+
 
 
   }
-  
+
+
+
+
+
+
   .product img {
     max-width: 100%;
     height: auto;
@@ -32,20 +37,23 @@ body {
   
   .product h3 {
     margin-top: 10px;
+    text-align: start;
   }
   
   .product p {
     color: #666;
+    text-align: start;
   }
   
   .product span {
     display: block;
     font-weight: bold;
     margin-top: 10px;
+    text-align: start;
   }
   
   .product button {
-    background-color: #007bff;
+    background-color: #728294;
     color: #fff;
     border: none;
     padding: 8px 16px;
@@ -55,7 +63,7 @@ body {
   }
   
   .product button:hover {
-    background-color: #0056b3;
+    background-color: #2f94ff;
   }
   
 

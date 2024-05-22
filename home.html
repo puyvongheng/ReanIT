@@ -318,22 +318,7 @@ nav {
     <script>
 
 
-const boxes = document.querySelectorAll('.product');
 
-window.addEventListener('scroll', checkBoxes);
-checkBoxes();
-
-function checkBoxes() {
-    const triggerBottom = window.innerHeight / 5 * 4;
-
-    boxes.forEach(box => {
-        const boxTop = product.getBoundingClientRect().top;
-
-        if (boxTop < triggerBottom) {
-          product.classList.add('show');
-        }
-    });
-}
 
     </script>
     
