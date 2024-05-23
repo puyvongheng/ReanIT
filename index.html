@@ -6,15 +6,66 @@
     <title>Puyvong Heng</title>
     <link rel="icon" href="HENGLOGO.ai.png">
     <link rel="stylesheet" href="bar.css">
+    <style>
+      
+.contact-container{
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  height: 100%;
+
+  margin-bottom: -20px;
+}
+
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+      
+     
+        }
+
+        .icon img {
+            width: 30px;
+            height: 30px;
+            transition: transform 0.3s ease, filter 0.3s ease;
+      
+        }
+
+        .icon:hover img {
+            transform: scale(1.2);
+        }
+
+        .icon.email:hover img {
+            filter: drop-shadow(0 0 5px rgb(34, 127, 168));
+        }
+
+        .icon.telegram:hover img {
+            filter: drop-shadow(0 0 5px rgb(10, 173, 255));
+        }
+
+        .icon.facebook:hover img {
+            filter: drop-shadow(0 0 5px rgb(0, 85, 255));
+        }
+
+        .icon.instagram:hover img {
+            filter: drop-shadow(0 0 5px rgb(255, 14, 82));
+        }
+    </style>
 
     <style>
-      body{
-        margin-top: -20px;
-      }
+     body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-color: none;
+}
     </style>
    
   </head>
   <body>
+
 
     <div class="phonebar"  >
       <img class="logo" src="logo/រៀនIT.png" alt="">
@@ -30,7 +81,7 @@
     <div class="custom-alert" id="customAlert">
       <div class="xx">
         <button id="x" onclick=" show()">
-          <img width="16" height="16" src="https://img.icons8.com/ios/100/delete-sign--v1.png" alt="delete-sign--v1"/>
+          <img width="19" height="19" style="background-color: transparent;" src="https://img.icons8.com/ios/100/delete-sign--v1.png" alt="delete-sign--v1"/>
         </button>
       </div>
       
@@ -42,20 +93,37 @@
         <a href="javascript:void(0)"onclick="loadPage('services.html'); closecomputer();   s();"><div class="aa">Services</div></a>
         <a href="javascript:void(0)"onclick="loadPage('contact.html'); closecomputer();   s();"><div class="aa">Contact</div></a>
       </center>
+
+      <div class="contact-container">
+
+        <div class="icons">
+            <a href="mailto:someone@example.com" class="icon email">
+                <img width="100" height="100" src="https://img.icons8.com/ios/100/email.png" alt="email"/>            </a>
+            <a href="https://telegram.org" class="icon telegram">
+                <img width="100" height="100" src="https://img.icons8.com/ios/100/telegram.png" alt="telegram"/>            </a>
+            <a href="https://www.facebook.com" class="icon facebook">
+                <img width="100" height="100" src="https://img.icons8.com/ios/100/facebook-new.png" alt="facebook-new"/>            </a>
+            <a href="https://www.instagram.com" class="icon instagram">
+                <img width="100" height="100" src="https://img.icons8.com/ios/100/instagram-new--v1.png" alt="instagram-new--v1"/>
+            </a>
+        </div>
     </div>
+    </div>
+
+
 
     <div class="navbar">
       <div class="m">
         <!--computet-->
         <a class="b" id="home1" href="javascript:void(0)" onclick="loadPage('home.html'); h1();  ">
           <div class="a home1"  >
-            <img class="iconbar" src="https://img.icons8.com/ios/100/home--v1.png" alt="home--v1"/>
+
             <p class="home" >Home</p>
           </div>
         </a>
         <a class="b" href="javascript:void(0)" onclick="loadPage('tool.html');  h2();">
           <div class="a tool1">
-            <img class="iconbar" src="https://img.icons8.com/ios/100/web.png" alt="web"/>
+      
 
             <p class="tool">Tool</p>
           </div>
@@ -103,11 +171,11 @@
 function h1() {
         
 
-          document.querySelector('.navbar .home ').style.color ='red';
-          document.querySelector('.navbar .tool ').style.color ='aliceblue';
-          document.querySelector('.navbar .about ').style.color ='aliceblue';
-          document.querySelector('.navbar .Services ').style.color ='aliceblue';
-          document.querySelector('.navbar .Contact ').style.color ='aliceblue';
+          document.querySelector('.navbar .home ').style.color ='#4392f1';
+          document.querySelector('.navbar .tool ').style.color ='#ffffff';
+          document.querySelector('.navbar .about ').style.color ='#ffffff';
+          document.querySelector('.navbar .Services ').style.color ='#ffffff';
+          document.querySelector('.navbar .Contact ').style.color ='#ffffff';
 
           document.querySelector('.home1').style.backgroundColor = '#D0D3D4';
           document.querySelector('.tool1').style.backgroundColor = '';
@@ -128,13 +196,13 @@ function h1() {
 function h2() {
         
 
-        document.querySelector('.navbar .home').style.color ='aliceblue';
-        document.querySelector('.navbar .tool ').style.color ='red';
+        document.querySelector('.navbar .home').style.color ='#ffffff';
+        document.querySelector('.navbar .tool ').style.color ='#4392f1';
         document.querySelector('.navbar .about').style.color ='';
         document.querySelector('.navbar .Services').style.color ='';
         document.querySelector('.navbar .Contact').style.color ='';
 
-        document.querySelector('.home1').style.backgroundColor = ' #4392f1';
+        document.querySelector('.home1').style.backgroundColor = '#bababa ';
           document.querySelector('.tool1').style.backgroundColor = '#D0D3D4';
         document.querySelector('.about1').style.backgroundColor = '';
         document.querySelector('.Services1').style.backgroundColor = '';
@@ -152,13 +220,13 @@ function h2() {
 function h3() {
         
 
-        document.querySelector('.navbar .home').style.color ='aliceblue';
+        document.querySelector('.navbar .home').style.color ='#ffffff';
         document.querySelector('.navbar .tool').style.color ='';
-        document.querySelector('.navbar .about').style.color ='red';
+        document.querySelector('.navbar .about').style.color ='#4392f1';
         document.querySelector('.navbar .Services').style.color ='';
         document.querySelector('.navbar .Contact').style.color ='';
 
-        document.querySelector('.home1').style.backgroundColor = ' #4392f1';
+        document.querySelector('.home1').style.backgroundColor = ' #bababa';
           document.querySelector('.tool1').style.backgroundColor = '';
         document.querySelector('.about1').style.backgroundColor = '#D0D3D4';
         document.querySelector('.Services1').style.backgroundColor = '';
@@ -176,13 +244,13 @@ function h3() {
 function h4() {
         
 
-        document.querySelector('.navbar .home').style.color ='aliceblue';
+        document.querySelector('.navbar .home').style.color ='#ffffff';
         document.querySelector('.navbar .tool').style.color ='';
         document.querySelector('.navbar .about').style.color ='';
-        document.querySelector('.navbar .Services').style.color ='red';
+        document.querySelector('.navbar .Services').style.color ='#4392f1';
         document.querySelector('.navbar .Contact').style.color ='';
 
-        document.querySelector('.home1').style.backgroundColor = ' #4392f1';
+        document.querySelector('.home1').style.backgroundColor = '#bababa ';
           document.querySelector('.tool1').style.backgroundColor = '';
         document.querySelector('.about1').style.backgroundColor = '';
         document.querySelector('.Services1').style.backgroundColor = '#D0D3D4';
@@ -200,13 +268,13 @@ function h4() {
 function h5() {
         
 
-        document.querySelector('.navbar .home').style.color ='aliceblue';
+        document.querySelector('.navbar .home').style.color ='#ffffff';
         document.querySelector('.navbar .tool').style.color ='';
         document.querySelector('.navbar .about').style.color ='';
         document.querySelector('.navbar .Services').style.color ='';
-        document.querySelector('.navbar .Contact').style.color ='red';
+        document.querySelector('.navbar .Contact').style.color ='#4392f1';
 
-        document.querySelector('.home1').style.backgroundColor = ' #4392f1';
+        document.querySelector('.home1').style.backgroundColor = '#bababa ';
           document.querySelector('.tool1').style.backgroundColor = '';
         document.querySelector('.about1').style.backgroundColor = '';
         document.querySelector('.Services1').style.backgroundColor = '';
