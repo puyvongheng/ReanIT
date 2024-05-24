@@ -1,37 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Services</title>
-<link rel="stylesheet" href="tool.css">
-<style>
- 
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Our Services: Color Tools for design and web development.">
+    <title>Our Services</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add some basic styles for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .service {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            height: 180px; /* Adjust the height as needed */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service h2 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+            color: #333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .service p {
+            font-size: 1em;
+            margin: 0 0 10px;
+            color: #666;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            word-wrap: break-word;
+        }
+
+        .service a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .service a:hover h2 {
+            color: #007BFF;
+        }
+
+        .service i {
+            font-size: 2em; /* Adjust the size of the icon */
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>color</h1>
+        <h1>Color Tools</h1>
     </header>
     <div class="container">
         <div class="service">
-            <a href="#">    <h2> cssgradient.io</h2></a>
-        
-            <p>used for html </p>
+            <a href="https://cssgradient.io/" target="_blank">
+                <i class="fas fa-paint-brush"></i>
+                <h2>cssgradient.io</h2>
+            </a>
+            <p>Create beautiful gradients for your projects.</p>
         </div>
         <div class="service">
-            <a href="#">  <h2>mycolor.space</h2></a>
-          
-            <p>Need eye-c can your business stand out.</p>
+            <a href="https://mycolor.space/" target="_blank">
+                <i class="fas fa-palette"></i>
+                <h2>mycolor.space</h2>
+            </a>
+            <p>Generate color palettes for your designs.</p>
         </div>
         <div class="service">
-            <a href="#"> <h2>coolors.co</h2></a>
-           
-            <p>Reach yth our digital marnt, we can help you grow.</p>
+            <a href="https://coolors.co/" target="_blank">
+                <i class="fas fa-swatchbook"></i>
+                <h2>coolors.co</h2>
+            </a>
+            <p>Explore and create color schemes effortlessly.</p>
         </div>
         <div class="service">
-            <h2>color.adobe.com</h2>
-            <p>Rketing strategies. Flp you grow.</p>
+            <a href="https://color.adobe.com/" target="_blank">
+                <i class="fas fa-fill-drip"></i>
+                <h2>color.adobe.com</h2>
+            </a>
+            <p>Discover color combinations with Adobe Color.</p>
         </div>
     </div>
 </body>

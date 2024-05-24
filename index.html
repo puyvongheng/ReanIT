@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puyvong Heng</title>
     <link rel="icon" href="HENGLOGO.ai.png">
     <link rel="stylesheet" href="bar.css">
     <style>
-      
-.contact-container{
-  display: flex;
-  margin: 20px;
-  justify-content: center;
-  height: 100%;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            background-color: none;
+        }
 
-  margin-bottom: -20px;
-}
+        .contact-container {
+            display: flex;
+            margin: 20px;
+            justify-content: center;
+            height: 100%;
+            margin-bottom: -20px;
+        }
 
         .icons {
             display: flex;
             justify-content: center;
             gap: 20px;
-      
-     
         }
 
         .icon img {
             width: 30px;
             height: 30px;
             transition: transform 0.3s ease, filter 0.3s ease;
-      
         }
 
         .icon:hover img {
@@ -52,326 +55,175 @@
             filter: drop-shadow(0 0 5px rgb(255, 14, 82));
         }
     </style>
-
-    <style>
-     body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    background-color: none;
-}
-    </style>
-   
-  </head>
-  <body>
-
-
-    <div class="phonebar"  >
-      <img class="logo" src="logo/រៀនIT.png" alt="">
-      <button  class="show-alert-button" onclick="showCustomAlert()  ">
-      <img class="menu_img"src="https://img.icons8.com/ios-glyphs/480/menu--v3.png"alt="menu--v3" />
-      </button>
+</head>
+<body>
+    <div class="phonebar">
+        <img class="logo" src="logo/រៀនIT.png" alt="Logo">
+        <button class="show-alert-button" onclick="showCustomAlert()">
+            <img class="menu_img" src="https://img.icons8.com/ios-glyphs/480/menu--v3.png" alt="Menu">
+        </button>
     </div>
-
 
     <p id="p" class="p"></p>
 
-
     <div class="custom-alert" id="customAlert">
-      <div class="xx">
-        <button id="x" onclick=" show()">
-          <img width="19" height="19" style="background-color: transparent;" src="https://img.icons8.com/ios/100/delete-sign--v1.png" alt="delete-sign--v1"/>
-        </button>
-      </div>
-      
-
-      <center><!--phome-->
-        <a  href="javascript:void(0)" onclick="loadPage('home.html'); closecomputer();"><div class="aa" >Home</div></a>
-        <a href="javascript:void(0)" onclick="loadPage('tool.html'); closecomputer();  s();"><div class="aa">Tools</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('about.html'); closecomputer();   s();"><div class="aa">About</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('services.html'); closecomputer();   s();"><div class="aa">Services</div></a>
-        <a href="javascript:void(0)"onclick="loadPage('contact.html'); closecomputer();   s();"><div class="aa">Contact</div></a>
-      </center>
-
-      <div class="contact-container">
-
-        <div class="icons">
-            <a href="mailto:someone@example.com" class="icon email">
-                <img width="100" height="100" src="https://img.icons8.com/ios/100/email.png" alt="email"/>            </a>
-            <a href="https://telegram.org" class="icon telegram">
-                <img width="100" height="100" src="https://img.icons8.com/ios/100/telegram.png" alt="telegram"/>            </a>
-            <a href="https://www.facebook.com" class="icon facebook">
-                <img width="100" height="100" src="https://img.icons8.com/ios/100/facebook-new.png" alt="facebook-new"/>            </a>
-            <a href="https://www.instagram.com" class="icon instagram">
-                <img width="100" height="100" src="https://img.icons8.com/ios/100/instagram-new--v1.png" alt="instagram-new--v1"/>
-            </a>
+        <div class="xx">
+            <button id="x" onclick="show()">
+                <img width="19" height="19" style="background-color: transparent;" src="https://img.icons8.com/ios/100/delete-sign--v1.png" alt="Close">
+            </button>
+        </div>
+        <center>
+            <a href="javascript:void(0)" onclick="loadPage('home.html'); closecomputer();"><div class="aa">Home</div></a>
+            <a href="javascript:void(0)" onclick="loadPage('tool.html'); closecomputer();"><div class="aa">Tools</div></a>
+            <a href="javascript:void(0)" onclick="loadPage('about.html'); closecomputer();"><div class="aa">About</div></a>
+            <a href="javascript:void(0)" onclick="loadPage('Services.html'); closecomputer();"><div class="aa">Services</div></a>
+            <a href="javascript:void(0)" onclick="loadPage('contact.html'); closecomputer();"><div class="aa">Contact</div></a>
+        </center>
+        <div class="contact-container">
+            <div class="icons">
+                <a href="mailto:someone@example.com" class="icon email">
+                    <img width="100" height="100" src="https://img.icons8.com/ios/100/email.png" alt="Email">
+                </a>
+                <a href="https://telegram.org" class="icon telegram">
+                    <img width="100" height="100" src="https://img.icons8.com/ios/100/telegram.png" alt="Telegram">
+                </a>
+                <a href="https://www.facebook.com" class="icon facebook">
+                    <img width="100" height="100" src="https://img.icons8.com/ios/100/facebook-new.png" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" class="icon instagram">
+                    <img width="100" height="100" src="https://img.icons8.com/ios/100/instagram-new--v1.png" alt="Instagram">
+                </a>
+            </div>
         </div>
     </div>
-    </div>
-
-
 
     <div class="navbar">
-      <div class="m">
-        <!--computet-->
-        <a class="b" id="home1" href="javascript:void(0)" onclick="loadPage('home.html'); h1();  ">
-          <div class="a home1"  >
-
-            <p class="home" >Home</p>
-          </div>
-        </a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('tool.html');  h2();">
-          <div class="a tool1">
-      
-
-            <p class="tool">Tool</p>
-          </div>
-        </a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('about.html');  h3(); "><div class="a about1"><p class="about">About</p></div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('services.html');  h4(); "><div class="a Services1"><p class="Services">Services</p></div></a>
-        <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html');  h5();"><div class="a Contact1"><p class="Contact">Contact</p></div></a>
-      </div>
-
-      <div class="l">
-        <img class="logo"  style="display: block; margin-top: 0px; " src="logo/រៀនIT.png" alt="">
-      </div>
+        <div class="m">
+            <a class="b" id="home1" href="javascript:void(0)" onclick="loadPage('home.html'); h1();"><div class="a home1"><p class="home">Home</p></div></a>
+            <a class="b" href="javascript:void(0)" onclick="loadPage('tool.html'); h2();"><div class="a tool1"><p class="tool">Tool</p></div></a>
+            <a class="b" href="javascript:void(0)" onclick="loadPage('about.html'); h3();"><div class="a about1"><p class="about">About</p></div></a>
+            <a class="b" href="javascript:void(0)" onclick="loadPage('Services.html'); h4();"><div class="a Services1"><p class="Services">Services</p></div></a>
+            <a class="b" href="javascript:void(0)" onclick="loadPage('contact.html'); h5();"><div class="a Contact1"><p class="Contact">Contact</p></div></a>
+        </div>
+        <div class="l">
+            <img class="logo" style="display: block; margin-top: 0px;" src="logo/រៀនIT.png" alt="Logo">
+        </div>
     </div>
 
-    
- <main>
+    <main>
+        <div class="main"></div>
+        <iframe style="border: none; width: 100%; height: 900px;" id="contentFrame" class="content" src="home.html"></iframe>
+    </main>
 
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
 
-<div class="main">
+    <script>
+        function h1() {
+            document.querySelector('.navbar .home').style.color = '#4392f1';
+            document.querySelector('.navbar .tool').style.color = '#ffffff';
+            document.querySelector('.navbar .about').style.color = '#ffffff';
+            document.querySelector('.navbar .Services').style.color = '#ffffff';
+            document.querySelector('.navbar .Contact').style.color = '#ffffff';
 
-</div>
-<div style="background-color: rgb(255, 255, 255);">
-  
-
-
- 
-  
-
-  <iframe style="border: none; width: 100%; height: 900px;" id="contentFrame" class="content" src="home.html"></iframe>
-
-
-
- 
- </main>
-
-
-
-
- <footer>
-  <p>&copy; 2024 My Website</p>
-</footer>
-
-<script>
-
-function h1() {
-        
-
-          document.querySelector('.navbar .home ').style.color ='#4392f1';
-          document.querySelector('.navbar .tool ').style.color ='#ffffff';
-          document.querySelector('.navbar .about ').style.color ='#ffffff';
-          document.querySelector('.navbar .Services ').style.color ='#ffffff';
-          document.querySelector('.navbar .Contact ').style.color ='#ffffff';
-
-          document.querySelector('.home1').style.backgroundColor = '#D0D3D4';
-          document.querySelector('.tool1').style.backgroundColor = '';
-        document.querySelector('.about1').style.backgroundColor = '';
-        document.querySelector('.Services1').style.backgroundColor = '';
-        document.querySelector('.Contact1').style.backgroundColor = '';
-
-          /*
-          document.querySelector('.home1').style.backgroundColor = '#ededed69';
-          document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-          document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-          document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-          document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-*/
-      }
-
-      
-function h2() {
-        
-
-        document.querySelector('.navbar .home').style.color ='#ffffff';
-        document.querySelector('.navbar .tool ').style.color ='#4392f1';
-        document.querySelector('.navbar .about').style.color ='';
-        document.querySelector('.navbar .Services').style.color ='';
-        document.querySelector('.navbar .Contact').style.color ='';
-
-        document.querySelector('.home1').style.backgroundColor = '#bababa ';
-          document.querySelector('.tool1').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.about1').style.backgroundColor = '';
-        document.querySelector('.Services1').style.backgroundColor = '';
-        document.querySelector('.Contact1').style.backgroundColor = '';
-
-/*
-        document.querySelector('.home').style.backgroundColor = 'none';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-*/
-    }
-    
-function h3() {
-        
-
-        document.querySelector('.navbar .home').style.color ='#ffffff';
-        document.querySelector('.navbar .tool').style.color ='';
-        document.querySelector('.navbar .about').style.color ='#4392f1';
-        document.querySelector('.navbar .Services').style.color ='';
-        document.querySelector('.navbar .Contact').style.color ='';
-
-        document.querySelector('.home1').style.backgroundColor = ' #bababa';
-          document.querySelector('.tool1').style.backgroundColor = '';
-        document.querySelector('.about1').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.Services1').style.backgroundColor = '';
-        document.querySelector('.Contact1').style.backgroundColor = '';
-
-/*
-        document.querySelector('.home').style.backgroundColor = 'none';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-*/
-    }
-    
-function h4() {
-        
-
-        document.querySelector('.navbar .home').style.color ='#ffffff';
-        document.querySelector('.navbar .tool').style.color ='';
-        document.querySelector('.navbar .about').style.color ='';
-        document.querySelector('.navbar .Services').style.color ='#4392f1';
-        document.querySelector('.navbar .Contact').style.color ='';
-
-        document.querySelector('.home1').style.backgroundColor = '#bababa ';
-          document.querySelector('.tool1').style.backgroundColor = '';
-        document.querySelector('.about1').style.backgroundColor = '';
-        document.querySelector('.Services1').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.Contact1').style.backgroundColor = '';
-
-/*
-        document.querySelector('.home').style.backgroundColor = 'none';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-*/
-    }
-    
-function h5() {
-        
-
-        document.querySelector('.navbar .home').style.color ='#ffffff';
-        document.querySelector('.navbar .tool').style.color ='';
-        document.querySelector('.navbar .about').style.color ='';
-        document.querySelector('.navbar .Services').style.color ='';
-        document.querySelector('.navbar .Contact').style.color ='#4392f1';
-
-        document.querySelector('.home1').style.backgroundColor = '#bababa ';
-          document.querySelector('.tool1').style.backgroundColor = '';
-        document.querySelector('.about1').style.backgroundColor = '';
-        document.querySelector('.Services1').style.backgroundColor = '';
-        document.querySelector('.Contact1').style.backgroundColor = '#D0D3D4';
-
-/*
-        document.querySelector('.home').style.backgroundColor = 'none';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-        document.querySelector('.home').style.backgroundColor = '#D0D3D4';
-*/
-    }
-
-
-          function scrollLeft() {
-            document.querySelector('.nav-bar').scrollBy({
-                left: -200, // Adjust the value as needed
-                behavior: 'smooth'
-            });
+            document.querySelector('.home1').style.backgroundColor = '#D0D3D4';
+            document.querySelector('.tool1').style.backgroundColor = '';
+            document.querySelector('.about1').style.backgroundColor = '';
+            document.querySelector('.Services1').style.backgroundColor = '';
+            document.querySelector('.Contact1').style.backgroundColor = '';
         }
 
-        function scrollRight() {
-            document.querySelector('.nav-bar').scrollBy({
-                left: 200, // Adjust the value as needed
-                behavior: 'smooth'
-            });
+        function h2() {
+            document.querySelector('.navbar .home').style.color = '#ffffff';
+            document.querySelector('.navbar .tool').style.color = '#4392f1';
+            document.querySelector('.navbar .about').style.color = '#ffffff';
+            document.querySelector('.navbar .Services').style.color = '#ffffff';
+            document.querySelector('.navbar .Contact').style.color = '#ffffff';
+
+            document.querySelector('.home1').style.backgroundColor = '#bababa';
+            document.querySelector('.tool1').style.backgroundColor = '#D0D3D4';
+            document.querySelector('.about1').style.backgroundColor = '';
+            document.querySelector('.Services1').style.backgroundColor = '';
+            document.querySelector('.Contact1').style.backgroundColor = '';
         }
 
+        function h3() {
+            document.querySelector('.navbar .home').style.color = '#ffffff';
+            document.querySelector('.navbar .tool').style.color = '#ffffff';
+            document.querySelector('.navbar .about').style.color = '#4392f1';
+            document.querySelector('.navbar .Services').style.color = '#ffffff';
+            document.querySelector('.navbar .Contact').style.color = '#ffffff';
 
-function loadPage(page) {
+            document.querySelector('.home1').style.backgroundColor = '#bababa';
+            document.querySelector('.tool1').style.backgroundColor = '';
+            document.querySelector('.about1').style.backgroundColor = '#D0D3D4';
+            document.querySelector('.Services1').style.backgroundColor = '';
+            document.querySelector('.Contact1').style.backgroundColor = '';
+        }
+
+        function h4() {
+            document.querySelector('.navbar .home').style.color = '#ffffff';
+            document.querySelector('.navbar .tool').style.color = '#ffffff';
+            document.querySelector('.navbar .about').style.color = '#ffffff';
+            document.querySelector('.navbar .Services').style.color = '#4392f1';
+            document.querySelector('.navbar .Contact').style.color = '#ffffff';
+
+            document.querySelector('.home1').style.backgroundColor = '#bababa';
+            document.querySelector('.tool1').style.backgroundColor = '';
+            document.querySelector('.about1').style.backgroundColor = '';
+            document.querySelector('.Services1').style.backgroundColor = '#D0D3D4';
+            document.querySelector('.Contact1').style.backgroundColor = '';
+        }
+
+        function h5() {
+            document.querySelector('.navbar .home').style.color = '#ffffff';
+            document.querySelector('.navbar .tool').style.color = '#ffffff';
+            document.querySelector('.navbar .about').style.color = '#ffffff';
+            document.querySelector('.navbar .Services').style.color = '#ffffff';
+            document.querySelector('.navbar .Contact').style.color = '#4392f1';
+
+            document.querySelector('.home1').style.backgroundColor = '#bababa';
+            document.querySelector('.tool1').style.backgroundColor = '';
+            document.querySelector('.about1').style.backgroundColor = '';
+            document.querySelector('.Services1').style.backgroundColor = '';
+            document.querySelector('.Contact1').style.backgroundColor = '#D0D3D4';
+        }
+
+        function loadPage(page) {
             document.getElementById('contentFrame').src = page;
-
-         
         }
 
+        function showCustomAlert() {
+            document.querySelector('.show-alert-button').style.display = 'none';
+            document.getElementById('customAlert').style.display = 'block';
+        }
 
-  function showCustomAlert() {
-   // setTimeout(closeCustomAlert, 5000);
-    document.querySelector('.show-alert-button').style.display = 'none';
-    document.getElementById('customAlert').style.display = 'block';
-    document.querySelector('.alert-overlay .linkalet').style.display = 'block';
-    document.getElementById(' show-alert-button').style.display = 'none';
-}
+        function show() {
+            document.querySelector('.show-alert-button').style.display = 'block';
+            document.getElementById('customAlert').style.display = 'none';
+        }
 
+        function closecomputer() {
+            document.querySelector('.show-alert-button').style.display = 'block';
+            document.getElementById('customAlert').style.display = 'none';
+        }
 
+        function s() {
+            const items = document.querySelectorAll('.nav-bar .subli');
+            items.forEach(item => {
+                item.style.display = 'none';
+            });
+            document.querySelector('.subsubbarss').style.display = 'none';
+        }
 
-
-function show() {   
-  document.querySelector('.show-alert-button').style.display = 'block';
-    document.getElementById('customAlert').style.display = 'none';
-    document.querySelector('.alert-overlay ').style.display = 'none';
-}
-
-
-
-function closeCustomAlert() {//++++++++++++++++++++++++++++++++++++++++++++
-
-    document.querySelector('.show-alert-button').style.display = 'none';
-    document.getElementById('customAlert').style.display = 'none';
-    document.querySelector('.alert-overlay ').style.display = 'none';
-  
-
-}
-function closecomputer() {//++++++++++++++++++++++++++++++++++++++++++++
-
-document.querySelector('.show-alert-button').style.display = 'block';
-  document.getElementById('customAlert').style.display = 'none';
-  document.querySelector('.alert-overlay ').style.display = 'none';
- 
-}
-
-function s(){
-  const items = document.querySelectorAll('.nav-bar .subli');
-    items.forEach(item => {
-        item.style.display = 'none';
-    });
-  document.querySelector('.subsubbarss').style.display = 'none';
-}
-
-function m(){
-  const items = document.querySelectorAll('.nav-bar .subli');
-    items.forEach(item => {
-        item.style.display = 'block';
-    });
-  document.querySelector('.subsubbarss').style.display = 'block';
-}
-
-/*
-function ahide() {
-
-  hidesubbar();
-   
-}
-*/
-</script>
-
-
-  </body>
+        function m() {
+            const items = document.querySelectorAll('.nav-bar .subli');
+            items.forEach(item => {
+                item.style.display = 'block';
+            });
+            document.querySelector('.subsubbarss').style.display = 'block';
+        }
+    </script>
+</body>
 </html>

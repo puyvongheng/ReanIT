@@ -54,6 +54,7 @@ display: flex;
 }
 .home1{
     background-color: #D0D3D4;
+border-radius: 5px;
 
   
     height: 50px;
@@ -69,6 +70,7 @@ display: flex;
     margin: 5px;
 
     background-color: rgb(186, 186, 186);
+    border-radius: 5px;
 
   
 }
@@ -79,6 +81,7 @@ display: flex;
     font-size: 20px;
     height: 50px;
     margin: 5px;
+    border-radius: 5px;
 }
 .Services {
     font-size: 15px;
@@ -87,6 +90,7 @@ display: flex;
     font-size: 20px;
     height: 50px;
     margin: 5px;
+    border-radius: 5px;
 }
 .Contact {
     font-size: 15px;
@@ -95,6 +99,7 @@ display: flex;
     font-size: 20px;
     height: 50px;
     margin: 5px;
+    border-radius: 5px;
 }
 
 .a:hover {
