@@ -44,7 +44,7 @@
     <header>
         <h1>About Us</h1>
     </header>
-    <div class="container">
+    <div class="reveal container">
         <h2>Our Mission</h2>
         <p>Our mission is to provide high-quality web development tools and resources to help developers create stunning websites with ease. We believe in the power of technology to transform businesses and improve lives.</p>
         
@@ -57,5 +57,34 @@
         <h2>Contact Us</h2>
         <p>If you have any questions or would like to learn more about our services, please <a href="contact.html">contact us</a>. We are here to help you succeed.</p>
     </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+              document.addEventListener('DOMContentLoaded', function () {
+        const sr = ScrollReveal({
+            origin: 'bottom',
+
+            delay: 200,
+            easing: 'ease-out',
+            reset: false
+        });
+
+        sr.reveal('.reveal', {
+            interval: 200
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
 </body>
 </html>

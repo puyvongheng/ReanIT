@@ -43,18 +43,47 @@
         <h1>Our Services</h1>
     </header>
     <div class="container">
-        <div class="service">
+        <div class="reveal service">
             <h2>Web Development</h2>
             <p>We offer professional web development services tailored to your business needs. From custom websites to e-commerce solutions, we've got you covered.</p>
         </div>
-        <div class="service">
+        <div class="reveal service">
             <h2>Graphic Design</h2>
             <p>Need eye-catching visuals for your brand? Our graphic design experts can create stunning logos, brochures, and more to help your business stand out.</p>
         </div>
-        <div class="service">
+        <div class="reveal service">
             <h2>Digital Marketing</h2>
             <p>Reach your target audience and boost your online presence with our digital marketing strategies. From SEO to social media management, we can help you grow.</p>
         </div>
     </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+              document.addEventListener('DOMContentLoaded', function () {
+        const sr = ScrollReveal({
+            origin: 'bottom',
+
+            delay: 200,
+            easing: 'ease-out',
+            reset: false
+        });
+
+        sr.reveal('.reveal', {
+            interval: 200
+        });
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    </script>
 </body>
 </html>
