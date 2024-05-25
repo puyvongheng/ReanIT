@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>រៀនIT</title>
+    <link  type="icon" href="logo/រៀនIT.png">
+ 
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+
             scroll-behavior: smooth;
+  overflow: hidden;
+       
+
         }
 
         .nav-bar {
             background-color: #333;
             position: relative;
             padding: 15px;
+
+       
         }
 
         .nav-container {
@@ -68,17 +75,17 @@
         <nav class="subsubbarss">
             <div class="nav-container">
                 <ul class="nav-bar" id="nav-bar">
-                    <li class="subli"><a id="html" href="javascript:void(0)" onclick="loadPage('cose/html.html', 'html');">HTML</a></li>
-                    <li class="subli"><a id="css" href="javascript:void(0)" onclick="loadPage('cose/css.html', 'css');">CSS</a></li>
-                    <li class="subli"><a id="js" href="javascript:void(0)" onclick="loadPage('cose/js.html', 'js');">JavaScript</a></li>
-                    <li class="subli"><a id="python" href="javascript:void(0)" onclick="loadPage('cose/python.html', 'python');">Python</a></li>
-                    <li class="subli"><a id="php" href="javascript:void(0)" onclick="loadPage('cose/php.html','php');">PHP</a></li>
-                    <li class="subli"><a id="photoshop" href="javascript:void(0)" onclick="loadPage('cose/photoshop.html','photoshop');">Photoshop</a></li>
+                    <li class="subli"><a id="html" href="javascript:void(0)" onclick="loadPage('cose/html.html', 'html');"><img src="logo/html-5.png" width="15px"   style=" margin-left: 10%; " alt="">HTML</a></li>
+                    <li class="subli"><a id="css" href="javascript:void(0)" onclick="loadPage('cose/css.html', 'css');"><img src="logo/css-3.png" width="15px"   style=" margin-left: 10%; " alt="">CSS</a></li>
+                    <li class="subli"><a id="js" href="javascript:void(0)" onclick="loadPage('cose/js.html', 'js');"><img src="logo/java-script.png" width="15px"   style=" margin-left: 10%; " alt="">JavaScript</a></li>
+                    <li class="subli"><a id="python" href="javascript:void(0)" onclick="loadPage('cose/python.html', 'python');"><img src="logo/python.png" width="15px"   style=" margin-left: 10%; " alt="">Python</a></li>
+                    <li class="subli"><a id="php" href="javascript:void(0)" onclick="loadPage('cose/php.html','php');"><img src="logo/web.png" width="16px"   style=" margin-left: 10%; " alt="">PHP</a></li>
+                    <li class="subli" style="display: none;"><a id="photoshop" href="javascript:void(0)" onclick="loadPage('cose/photoshop.html','photoshop');">Photoshop</a></li>
                 </ul>
             </div>
         </nav>
     </div>
-    <iframe style="border: none; width: 100%; height: 900px;" id="contentFrame" class="content" src="cose/html.html"></iframe>
+    <iframe style="border: none; width: 100%; height: 900px; " id="contentFrame" class="content" src="cose/html.html"></iframe>
 
     <script>
         function resetColors() {
