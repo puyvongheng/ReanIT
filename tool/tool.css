@@ -6,10 +6,29 @@ body {
     
 }
 header {
-
-    color: #fff;
-    padding: 10px 20px;
+    color: white;
+    padding: 10px 0;
     text-align: center;
+    background-color: #007BFF;
+
+
+}
+a{
+    color: #1f48ffcb;
+    padding: 5px;
+  
+}
+li{
+    color: red;
+    height: 30px;
+
+    margin: 2px;
+    border-radius: 20px;
+    padding: 10px;
+}
+a:hover{
+    color: #0060c6;
+  
 }
 .container {
     max-width: 800px;
@@ -17,10 +36,10 @@ header {
     padding: 0 20px;
 }
 h1 {
-    color: #333;
+    color: #ffffff;
 }
 h2 {
-    color: #333;
+    color: #ffffff;
     margin-top: 30px;
 }
 p {
