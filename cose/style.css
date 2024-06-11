@@ -1,6 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
-
+  font-family: "Tomorrow", sans-serif;
   }
   
   .products-container {
@@ -50,6 +49,7 @@ body {
     font-size: 0.8rem;
     margin-top: 10px;
     text-align: start;
+    font-family: "Tomorrow", sans-serif;
   }
   
   .product p {
