@@ -8,7 +8,67 @@
     <link rel="stylesheet" href="stylecss1.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
- 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<style>
+    .payment-container {
+              background-color: #fff;
+              padding: 20px;
+              border-radius: 8px;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+              width: 300px;
+              text-align: center;
+          }
+  
+          h2 {
+              margin-bottom: 20px;
+              font-size: 1.5em;
+          }
+  
+          .payment-method {
+              margin: 10px 0;
+              text-align: left;
+          }
+  
+          .payment-method input {
+              margin-right: 10px;
+          }
+  
+          .payment-method label {
+              margin-left: 5px;
+          }
+  
+          .total-amount {
+              margin-top: 20px;
+          }
+  
+          .total-amount h3 {
+              margin: 0;
+              font-size: 1.2em;
+              color: #333;
+          }
+  
+          #total-usd {
+              color: #e74c3c;
+              font-weight: bold;
+          }
+  
+          .submit-btn {
+              margin-top: 20px;
+              padding: 10px 20px;
+              background-color: #3498db;
+              color: #fff;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+              font-size: 1em;
+          }
+  
+          .submit-btn:hover {
+              background-color: #2980b9;
+          }
+  
+  </style>
 
 </head>
 <body>
@@ -43,13 +103,75 @@
                 <div class="dicon"><img class="icon" src="img/visible_4015774.png" alt=""> 100k </div>
             </div>
         </div>
-        <div class="get" style="background-color: rgba(255, 0, 0, 0.393);"><img class="icon" style="transform: scale(1.3);" src="img/shopping-cart_3685298.png" alt=""></div>
+        <div id="showMoneyBtn" class="get" style="background-color: rgba(255, 0, 0, 0.393);"><img class="icon" style="transform: scale(1.3);" src="img/shopping-cart_3685298.png" alt=""></div>
     
         </div>
 
 
 
 </div>
+
+
+
+
+<div id="popup"  class="popup">
+    <div class="popup-content">
+    <h2>Choose a Payment Method</h2>
+    <form>
+        <div class="payment-method">
+            <input type="radio" id="credit-card" name="payment" value="credit-card">
+            <label for="credit-card"><i class="fas fa-credit-card"></i> Credit Card</label>
+        </div>
+        <div class="payment-method">
+            <input type="radio" id="paypal" name="payment" value="paypal">
+            <label for="paypal"><i class="fab fa-paypal"></i> PayPal</label>
+        </div>
+        <div class="payment-method">
+            <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+            <label for="bank-transfer"><i class="fas fa-university"></i> Bank Transfer</label>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    <div class="total-amount">
+        <h3>Total: <span id="total-usd">USD 0.00</span></h3>
+    </div>
+</div>
+</div>
+
+
+
+
+<div  class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <p>Total Money: $<span id="totalMoney">0</span></p>
+    </div>
+</div>
+<script>document.addEventListener('DOMContentLoaded', () => {
+    const showMoneyBtn = document.getElementById('showMoneyBtn');
+    const popup = document.getElementById('popup');
+    const closeBtn = document.querySelector('.close-btn');
+    const totalMoney = document.getElementById('totalMoney');
+
+    let money = 1000; // Example amount of total money
+
+    showMoneyBtn.addEventListener('click', () => {
+        totalMoney.textContent = money;
+        popup.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', () => {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (event) => {
+        if (event.target == popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
+</script>
+
 
 </body>
 </html>
