@@ -64,9 +64,7 @@ body {
 
 }
 .d{
-
     display: flex;
-
 }
 .dicon{
     height: 25px;
@@ -81,19 +79,34 @@ body {
 }
 .get{
   width: 280px;
-    background-color: rgb(4, 220, 65);
+    background-color: rgb(16, 167, 255);
     text-align: center;
     margin-top: 5px;
     padding: 10px;
     border-radius: 5px;
+    color: white;
 }
 a{
     text-decoration: none;
 }
 @media (max-width: 600px) {
   .body{
-    display: flex;
-    flex-direction: column;
-  }
+display: flex;
+flex-direction: column;
+flex-direction: row;
+
+
+ }
+  .t{
+margin-top: 0;
+width: 300px;
+transform: scale(0.5);
+margin: -60px;
+
+}
+
+
+
+
 
 }
