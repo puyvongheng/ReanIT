@@ -130,7 +130,8 @@
             <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
             <label for="bank-transfer"><i class="fas fa-university"></i> Bank Transfer</label>
         </div>
-        <button type="submit" class="submit-btn">Submit</button>
+        <button  id="x" class="submit-btn"  style=" margin-right: 2px; background-color: transparent; color: black; border: 1px solid;">close</button>
+        <button type="submit" class="submit-btn ">Submit</button>
     </form>
     <div class="total-amount">
         <h3>Total: <span id="total-usd">USD 0.00</span></h3>
@@ -152,6 +153,7 @@
     const popup = document.getElementById('popup');
     const closeBtn = document.querySelector('.close-btn');
     const totalMoney = document.getElementById('totalMoney');
+    const x = document.getElementById('x');
 
     let money = 1000; // Example amount of total money
 
@@ -160,8 +162,17 @@
         popup.style.display = 'block';
     });
 
+
+    x.addEventListener('click', () => {
+     
+        popup.style.display = 'none';
+    });
+
     closeBtn.addEventListener('click', () => {
         popup.style.display = 'none';
+    });
+    closeBtn.addEventListener('click', () => {
+        showMoneyBtn.style.display = 'none';
     });
 
     window.addEventListener('click', (event) => {
@@ -171,6 +182,9 @@
     });
 });
 </script>
+
+
+
 
 
 </body>
