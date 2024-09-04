@@ -48,3 +48,9 @@ Welcome to the **Car Shop Application**! This project is a dynamic and responsiv
 │
 └── /config
     └── database.php
+
+````
+
+### Notes:
+- Replace `"tes"` in the `[Open Project](tes)` link with the actual URL or file path where you want the link to direct.
+- Update the repository URL and any other placeholders with your actual project details.
